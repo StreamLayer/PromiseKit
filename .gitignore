@@ -1,5 +1,6 @@
 *.xcodeproj/**/xcuserdata/
 *.xcscmblueprint
+*.zip
 /Carthage
 /.build
 .DS_Store
