@@ -1,0 +1,1 @@
+{"identifiers":["CatchMixin","PMKError","CancellableError","CatchPolicy","PMKNamespacer","Resolver","Result","Thenable","PMKConfiguration","__AnyPromise","Promise","Guarantee","PMKFinalizer","LogEvent","conf"],"products":["PromiseKit"],"prefix":"SLR_","fnReplace":[{"signature":"(_ promise: Promise<T>) throws -> T ","identifier":"hang"}]}
