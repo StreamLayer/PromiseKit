@@ -8,3 +8,5 @@ DerivedData
 /PromiseKit.podspec
 /Extensions/Carthage
 /Tests/JS-A+/build
+*.lock
+node_modules/
