@@ -1,0 +1,7 @@
+PromiseKit:
+  project: PromiseKit.xcodeproj
+  sdks:
+  - iphoneos
+  - iphonesimulator
+  - appletvos
+  - appletvsimulator
