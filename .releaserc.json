@@ -1,15 +1,15 @@
 {
-  "branch": "master",
+  "branches": ["master",{"name":"5.0.1-swift","prerelease":true}],
   "plugins": [
     ["@semantic-release/commit-analyzer", {
       "preset": "angular"
     }],
+    ["@semantic-release/exec", {
+      "prepareCmd": "carthage build --commitish v${nextRelease.version} --cache-builds --archive --archive-output SLR_PromiseKit.framework.zip"
+    }],
     ["@semantic-release/git", {
       "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
       "assets": ["report.json"]
-    }],
-    ["@semantic-release/exec", {
-      "publishCmd": "carthage build --archive"
     }],
     ["@semantic-release/github", {
       "assets": [

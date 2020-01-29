@@ -34,7 +34,7 @@ workflows:
               --exclude wrap
 
             xcconfig=$(mktemp /tmp/static.xcconfig.XXXXXX)
-            trap 'rm -f "$xcconfig"; git checkout -- "$DIR"' INT TERM HUP EXIT
+            trap 'rm -f "$xcconfig"; git checkout -- "$DIR"; git clean -f' INT TERM HUP EXIT
 
             echo "MACH_O_TYPE = staticlib" >> $xcconfig
             echo "DEBUG_INFORMATION_FORMAT = dwarf" >> $xcconfig
